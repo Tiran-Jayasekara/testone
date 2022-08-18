@@ -8,7 +8,7 @@ mongoose.connect("mongodb://localhost:27017/mynewdb",{
     
 },(err)=>{
     if(!err){
-        console.log("connect to db")
+        console.log("connect  db")
     }else{
         console.log("error")
     }
@@ -48,7 +48,7 @@ app.get("/get/:email",function(req,res){
             res.send("errrrrr");
         }else{
             if(val.length == 0){
-                res.send("Cannot find any customer using this id");
+                res.send("Cannot any customer using this id");
             }else{
                 res.send("email already register");
             }
